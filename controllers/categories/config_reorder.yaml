@@ -1,0 +1,5 @@
+title: Categories
+modelClass: Shohabbos\Catalog\Models\Category
+nameFrom: title
+toolbar:
+    buttons: reorder_toolbar

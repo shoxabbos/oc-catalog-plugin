@@ -1,0 +1,10 @@
+name: Categories
+form: $/shohabbos/catalog/models/category/fields.yaml
+modelClass: Shohabbos\Catalog\Models\Category
+defaultRedirect: shohabbos/catalog/categories
+create:
+    redirect: 'shohabbos/catalog/categories/update/:id'
+    redirectClose: shohabbos/catalog/categories
+update:
+    redirect: shohabbos/catalog/categories
+    redirectClose: shohabbos/catalog/categories

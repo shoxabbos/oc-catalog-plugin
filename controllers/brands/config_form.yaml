@@ -1,0 +1,10 @@
+name: Brands
+form: $/shohabbos/catalog/models/brand/fields.yaml
+modelClass: Shohabbos\Catalog\Models\Brand
+defaultRedirect: shohabbos/catalog/brands
+create:
+    redirect: 'shohabbos/catalog/brands/update/:id'
+    redirectClose: shohabbos/catalog/brands
+update:
+    redirect: shohabbos/catalog/brands
+    redirectClose: shohabbos/catalog/brands

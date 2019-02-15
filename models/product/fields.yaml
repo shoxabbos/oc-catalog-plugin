@@ -1,0 +1,76 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: URL
+        span: auto
+        required: 1
+        defaultFrom: title
+        preset:
+            field: title
+            type: slug
+        type: text
+tabs:
+    fields:
+        description:
+            label: Description
+            size: giant
+            span: full
+            required: 1
+            stretch: 0
+            type: richeditor
+            tab: Main
+        category:
+            label: Category
+            nameFrom: title
+            descriptionFrom: description
+            list: $/shohabbos/catalog/models/category/columns.yaml
+            span: auto
+            required: 1
+            type: recordfinder
+            tab: Additional
+        brand:
+            label: Brand
+            nameFrom: title
+            descriptionFrom: description
+            list: $/shohabbos/catalog/models/brand/columns.yaml
+            span: auto
+            required: 1
+            type: recordfinder
+            tab: Additional
+        properties:
+            label: Properties
+            prompt: 'Add new item'
+            span: auto
+            type: repeater
+            tab: Additional
+            form:
+                fields:
+                    label:
+                        label: Label
+                        span: auto
+                        type: text
+                    value:
+                        label: Value
+                        span: auto
+                        required: 1
+                        type: text
+        price:
+            label: Price
+            span: auto
+            required: 1
+            type: number
+            tab: Additional
+        images:
+            label: Images
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: Additional

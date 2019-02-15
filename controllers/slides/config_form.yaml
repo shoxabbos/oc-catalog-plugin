@@ -1,0 +1,10 @@
+name: Slides
+form: $/shohabbos/catalog/models/slide/fields.yaml
+modelClass: Shohabbos\Catalog\Models\Slide
+defaultRedirect: shohabbos/catalog/slides
+create:
+    redirect: 'shohabbos/catalog/slides/update/:id'
+    redirectClose: shohabbos/catalog/slides
+update:
+    redirect: shohabbos/catalog/slides
+    redirectClose: shohabbos/catalog/slides

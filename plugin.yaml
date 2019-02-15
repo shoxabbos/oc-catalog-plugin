@@ -1,0 +1,41 @@
+plugin:
+    name: 'shohabbos.catalog::lang.plugin.name'
+    description: 'shohabbos.catalog::lang.plugin.description'
+    author: Shohabbos
+    icon: oc-icon-institution
+    homepage: ''
+permissions:
+    manage_slides:
+        tab: 'shohabbos.catalog::lang.plugin.name'
+        label: 'Manage slides'
+    manage_brands:
+        tab: 'shohabbos.catalog::lang.plugin.name'
+        label: 'Manage brands'
+    manage_products:
+        tab: 'shohabbos.catalog::lang.plugin.name'
+        label: 'Manage products'
+    manage_categories:
+        tab: 'shohabbos.catalog::lang.plugin.name'
+        label: 'Manage categories'
+navigation:
+    catalog:
+        label: Catalog
+        url: shohabbos/catalog/products
+        icon: icon-life-ring
+        sideMenu:
+            catalog-products:
+                label: Products
+                url: shohabbos/catalog/products
+                icon: icon-shopping-cart
+            catalog-categories:
+                label: Categories
+                url: shohabbos/catalog/categories
+                icon: icon-list
+            catalog-brands:
+                label: Brands
+                url: shohabbos/catalog/brands
+                icon: icon-umbrella
+            catalog-slides:
+                label: Slides
+                url: shohabbos/catalog/slides
+                icon: icon-sliders

@@ -1,0 +1,33 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: 'URL param'
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    description:
+        label: Description
+        size: huge
+        span: full
+        required: 1
+        type: richeditor
+    logo:
+        label: Logo
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        required: 1
+        type: fileupload
+    website:
+        label: Website
+        span: auto
+        type: text
