@@ -25,4 +25,14 @@ class Brand extends Model
         'logo' => 'System\Models\File'
     ];
 
+    public $hasMany = [
+        'products' => Product::class
+    ];
+
+    public function loadCategories() {
+        $categories = $this->products()->lists('category_id');
+
+        return Category::whereIn('id', $categories)->get();
+    }
+
 }

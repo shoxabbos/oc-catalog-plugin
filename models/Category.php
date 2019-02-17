@@ -22,6 +22,9 @@ class Category extends Model
      */
     public $rules = [
     ];
-    
-    
+
+    public $hasMany = [
+        'products' => Product::class
+    ];
+
 }
